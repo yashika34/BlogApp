@@ -29,7 +29,7 @@ public class Blog {
                     Person author = findPersonById(post.getAuthorId());
                     return author != null && author.getAge() >= age;
                 })
-                .collect(Collectors.toList());
+                .collect(Collectors.toList());///
     }
 
     private Person findPersonById(String id) {
